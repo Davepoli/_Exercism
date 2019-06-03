@@ -1,2 +1,3 @@
 # _Exercism
-Exercises -  problem solving, algoritms in Javascript
+
+	Javascript exercises - problem solving, algorithms..
