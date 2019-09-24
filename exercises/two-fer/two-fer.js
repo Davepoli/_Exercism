@@ -1,6 +1,1 @@
-export const twoFer = (name) => {
-	if(name === '')
-		return 'One for you, one for me.';
-	else if(name === 'Alice')
-		return 'One for Alice, one for me.';
-};
+export const twoFer = (name) => name === '' ? 'One for you, one for me.' : `One for ${name}, one for me.`

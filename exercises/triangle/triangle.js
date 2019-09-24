@@ -1,16 +1,14 @@
 export class Triangle {
-
-	  constructor() {
-	  	this.sides = Array.from(arguments), x => a - b)
-	  }
+  constructor(a, b, c) {
+    this.sides = [a, b, c].sort((a, b) => a - b);
+  }
 
   kind() {
-    const [a, b, c] = this.sides
+    const [a, b, c] = this.sides;
 
-    if (this.sides.length !== 3 || a <= 0 || (a + b) <= c) { throw new Error('invalid triangle') }
-
-    if      (a === b) { return (a === c) ? 'equilateral' : 'isosceles' }
-    else if (b === c) { return 'isosceles' }
-    else              { return 'scalene' }
+    if (a <= 0 || a + b < c) throw new Error('Illegal triangle');
+    if (a === b && b === c)  return 'equilateral';
+    if (a === b || b === c)  return 'isosceles';
+    return 'scalene';
   }
 }

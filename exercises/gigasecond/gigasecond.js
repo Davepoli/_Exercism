@@ -1,3 +1,1 @@
-export const gigasecond = (time) => {
-	return new Date(time.getTime() + 10e11)
-}
+export const gigasecond = (time) => new Date(time.getTime() + 10e11)
