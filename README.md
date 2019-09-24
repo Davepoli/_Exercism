@@ -1,3 +1,3 @@
 # _Exercism
 
-	Javascript exercises - problem solving, algorithms..
+	Collection of JavaScript exercises from https://exercism.io/
